@@ -1,6 +1,7 @@
 let arrayCidadesVisitadas = [];
 let arrayCidadesNAOVisitadas = [];
-let i,i2 = 0;
+let i=0;
+let i2 = 0;
 let visitou = true;
 let city, aux;
 let jorge = true;
