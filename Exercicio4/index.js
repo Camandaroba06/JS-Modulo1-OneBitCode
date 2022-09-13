@@ -24,9 +24,9 @@ while(jorge === true){
     }
     aux = window.prompt("Deseja Encerrar o Programa ? (responda com Sim ou Nao)");
     if(aux === "Sim"){
-        visitou = true;
+        jorge = true;
     }else if(aux === "Nao"){
-        visitou = false;
+        jorge = false;
     }else{
         alert("Digite algo Válido!!");
     }    
