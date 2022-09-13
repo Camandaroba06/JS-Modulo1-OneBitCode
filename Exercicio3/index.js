@@ -29,3 +29,5 @@ switch(escolha){
         alert("Digite algo válido");
         break;
 }
+let Resultado = document.getElementById("resultP");
+Resultado.innerHTML = valorFinal;

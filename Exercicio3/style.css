@@ -1,0 +1,14 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+#result{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+#resultP{
+    display: flex;
+    justify-content: center;
+    color: cadetblue;
+}
