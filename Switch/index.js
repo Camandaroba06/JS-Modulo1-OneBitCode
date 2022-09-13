@@ -10,4 +10,7 @@ switch(x){
     case("c"):
         alert("O resultado é C");
         break;
+    default:
+        alert("Finalizando...");
+        break;
 }
