@@ -1,9 +1,8 @@
-h1{
-    display: flex;
-    justify-content: center;
+h1 {
+  display: flex;
+  justify-content: center;
 }
-.colunas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.colunas {
+  display: flex;
+  justify-content: space-around;
 }
