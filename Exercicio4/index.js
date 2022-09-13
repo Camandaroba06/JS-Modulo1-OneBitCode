@@ -22,7 +22,7 @@ while(jorge === true){
         arrayCidadesNAOVisitadas[i2] = city;
         i2++;
     }
-    aux = window.prompt("Deseja Encerrar o Programa ? (responda com Sim ou Nao)");
+    aux = window.prompt("Deseja Continuar o Programa ? (responda com Sim ou Nao)");
     if(aux === "Sim"){
         jorge = true;
     }else if(aux === "Nao"){
