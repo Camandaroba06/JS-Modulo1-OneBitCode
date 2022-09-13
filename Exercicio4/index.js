@@ -31,3 +31,11 @@ while(jorge === true){
         alert("Digite algo Válido!!");
     }    
 }
+console.log("Cidades Visitadas:");
+for(i=0;i<arrayCidadesVisitadas.length;i++){
+    console.log(arrayCidadesVisitadas[i]);
+}
+console.log("Cidades NAO Visitadas:");
+for(i=0;i<arrayCidadesNAOVisitadas.length;i++){
+    console.log(arrayCidadesNAOVisitadas[i]);
+}
