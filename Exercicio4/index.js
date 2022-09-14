@@ -47,7 +47,7 @@ for (i = 0; i < arrayCidadesVisitadas.length; i++) {
 console.log("Cidades NAO Visitadas:");
 for (i = 0; i < arrayCidadesNAOVisitadas.length; i++) {
     console.log(arrayCidadesNAOVisitadas[i]);
-    var corpoTabela2 = document.querySelector('#tbodyS');
+    var corpoTabela2 = document.querySelector('#tbodyN');
     var tr2 = document.createElement('tr');
     var tdNome2 = document.createElement('td');
     tdNome2.textContent = arrayCidadesNAOVisitadas[i];
