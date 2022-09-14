@@ -37,7 +37,7 @@ let elementoVisita = document.getElementById("tbody");
 let elementoNaoVisitado = document.getElementById("naoVisitadas");
 for (i = 0; i < arrayCidadesVisitadas.length; i++) {
     console.log(arrayCidadesVisitadas[i]);
-    var corpoTabela = document.querySelector('tbody');
+    var corpoTabela = document.querySelector('#tbodyS');
     var tr = document.createElement('tr');
     var tdNome = document.createElement('td');
     tdNome.textContent = arrayCidadesVisitadas[i];
@@ -47,6 +47,10 @@ for (i = 0; i < arrayCidadesVisitadas.length; i++) {
 console.log("Cidades NAO Visitadas:");
 for (i = 0; i < arrayCidadesNAOVisitadas.length; i++) {
     console.log(arrayCidadesNAOVisitadas[i]);
-    // elementoNaoVisitado.innerHTML = arrayCidadesVisitadas[i];
-    document.write("<p id='visitadas'>" + arrayCidadesVisitadas[i] + "</p>");
+    var corpoTabela2 = document.querySelector('#tbodyS');
+    var tr2 = document.createElement('tr');
+    var tdNome2 = document.createElement('td');
+    tdNome2.textContent = arrayCidadesNAOVisitadas[i];
+    tr2.appendChild(tdNome2);
+    corpoTabela2.appendChild(tr2);
 }
