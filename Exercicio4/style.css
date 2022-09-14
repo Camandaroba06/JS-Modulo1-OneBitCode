@@ -6,3 +6,16 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+th {
+  font-weight: 700;
+  font-size: 30px;
+}
