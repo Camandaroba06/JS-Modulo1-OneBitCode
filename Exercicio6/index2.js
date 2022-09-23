@@ -1,15 +1,15 @@
 let palavra = []
-palavra = prompt("Digite uma palavra para verificar se é um palindrome")
+palavra = prompt("Veja de você é o douglas")
 let invertida = []
 let i2 = palavra.length - 1
-let teste = ""
+let invertidaVar = ""
 for (let i = 0; i < palavra.length; i++) {
     console.log(palavra[i])
     invertida[i] = palavra[i2]
-    teste += invertida[i]
+    invertidaVar += invertida[i]
     i2--
 }
-console.log(teste)
-if (palavra == teste) {
-    console.log("É um palindrome")
+console.log(invertidaVar)
+if (palavra == invertidaVar) {
+    console.log("A palavra é um palindrome")
 }
