@@ -34,8 +34,22 @@ function visuVaga(listagem) {
     let i = window.prompt("Digite o Indice da vaga que quer Visualizar:")
     window.prompt(`Vaga ${i}:\n  ${listagem[i].nome}\n       Descrição: ${listagem[i].descricao}\nQuantidade de Candidatos: ${listagem[i].quantidadeCandidatos}\nData Limite: ${listagem[i].dataLimit}`)
 }
-
-
+function inscreveVaga(listagem) {
+    let nomeCandidato = window.prompt("Digite seu Nome para se inscrever na vaga:")
+    let indiceSelecionado = window.prompt("Digite o indice da vaga que quer se candidatar: ")
+    window.prompt(`Verifique seus dados e vaga na qual deseja se candidatar:\nNome: ${nomeCandidato}\nVaga na qual irá se candidatar:\n${listagem[indiceSelecionado].nome}\n${listagem[indiceSelecionado].descricao}\nData Limite: ${listagem[indiceSelecionado].dataLimit}`)
+    listagem[indiceSelecionado].candidatos.push(nomeCandidato);
+    listagem[indiceSelecionado].quantidadeCandidatos+=1
+}
+function excluirVaga(listagem) {
+    let indiceSelecionado = window.prompt("Digite o indice da vaga na qual deseja excluir do sistema:")
+    let acao = parseInt(window.prompt(`Tem certeza de que deseja excluir a vaga:\n${listagem[indiceSelecionado].nome}\n${listagem[indiceSelecionado].descricao}\nData Limite: ${listagem[indiceSelecionado].dataLimit}\nDigite 1 para excluir 0 para manter`))
+    if (acao === 1) {
+        listagem.splice(indiceSelecionado,1);
+    } else {
+        alert("Não excluimos a vaga selecionada")
+    }
+}
 let key = -1
 do {
     key = parseInt(window.prompt(
@@ -60,7 +74,10 @@ do {
             visuVaga(listagemVagas);
             break;
         case 4:
-            visuVaga(listagemVagas);
+            inscreveVaga(listagemVagas);
+            break;
+        case 5:
+            excluirVaga(listagemVagas);
             break;
         default:
             break;
